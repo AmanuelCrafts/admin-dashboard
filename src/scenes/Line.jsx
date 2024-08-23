@@ -1,7 +1,16 @@
-import React from "react";
+import { Box } from "@mui/material";
+import Header from "../components/Header";
+import LineChart from "../components/LineChart";
 
 const Line = () => {
-  return <div>Line</div>;
+  return (
+    <Box m="20px" py="20px">
+      <Header title="የመስመር ቻርት" subtitle="ቀላል የመስመር ቻርት" />
+      <Box height="75vh">
+        <LineChart />
+      </Box>
+    </Box>
+  );
 };
 
 export default Line;
